@@ -1,0 +1,66 @@
+import java.util.Scanner;
+import java.lang.Math;  
+public class Quadratic
+{
+double a,b,c,r1,r2,d;
+void get()
+{
+Scanner input = new Scanner(System.in);  
+System.out.println("Enter the value of a: ");  
+ a = input.nextDouble();
+while(a==0)
+{
+  System.out.println("Please enter a nonzero number: ");
+  System.out.println("Enter the value of a: ");  
+  a = input.nextDouble();
+}
+
+System.out.println("Enter the value of b: ");  
+b = input.nextDouble();  
+System.out.println("Enter the value of c: ");  
+c = input.nextDouble();  
+d= ((b * b )- 4.0 * a * c); 
+}
+void compute()
+{
+if(d==0)
+{
+ System.out.println("Roots Are Real and Equal: ");
+ r1=(-b)/(2*a);
+ r2=(-b)/(2*a);
+ System.out.println("roots are eual,r1=r2: "+r1);
+}
+else if (d>0)
+{
+System.out.println("Roots Are Real And Distinct : ");
+ r1=((-b)+Math.sqrt(d))/(2*a);
+ r2=((-b)-Math.sqrt(d))/(2*a);
+System.out.println("roots 1 : "+ r1 );
+System.out.println("roots 2 : "+ r2 );
+}
+else if (d<0)
+{
+System.out.println("Roots Are imaginaray  : ");
+ r1=(-b)/(2*a);
+ r2=Math.sqrt(-d)/(2*a);
+System.out.println("roots 1 : "+ r1 );
+System.out.println("roots 2 : "+ r2 );
+
+
+}
+}
+
+  public static void main(String Args[]){
+     
+      Quadratic q = new Quadratic();
+      q.get();
+      q.compute();
+      System.out.println("Name : IRFAN SUDARANI" );
+       System.out.println("USN :1BM23CS119");
+
+} 
+}
+
+
+
+ 
