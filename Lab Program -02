@@ -76,6 +76,6 @@ Student1 stud=new Student1();
 stud.getStudentdetails();
 stud.getMarks(); 
 stud.calSgpa();
-System.out.println("NAME : IRFAN SUDARANI \N USN: 1BM23CS119");
+System.out.println("NAME : IRFAN SUDARANI \n USN: 1BM23CS119");
 }
 }
