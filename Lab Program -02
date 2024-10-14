@@ -74,8 +74,8 @@ public static void main(String args[])
 {
 Student1 stud=new Student1();
 stud.getStudentdetails();
-stud.getMarks();
+stud.getMarks(); 
 stud.calSgpa();
-System.out.println("Jesvita Dias 1BM23CS126");
+System.out.println("NAME : IRFAN SUDARANI \N USN: 1BM23CS119");
 }
 }
