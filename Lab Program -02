@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 class Subject
 {
 int subjectmarks;
@@ -18,7 +18,7 @@ grade=0;
 }
 }
 
-class Student1
+class Student
 {
 String name;
 String usn;
@@ -27,7 +27,7 @@ double temp;
 int totalcredit=0;
 Subject subject[];
 Scanner s;
-Student1()
+Student()
 {
 int i;  
 subject = new Subject[8];
@@ -67,15 +67,14 @@ void calSgpa()
     sgpa=(double)(temp/totalcredit);
     System.out.println("SGPA of "+name+" is "+sgpa);
 }
-}
-class Student
-{
+
 public static void main(String args[])
 {
-Student1 stud=new Student1();
+Student stud=new Student();
 stud.getStudentdetails();
-stud.getMarks(); 
+stud.getMarks();
 stud.calSgpa();
-System.out.println("NAME : IRFAN SUDARANI \n USN: 1BM23CS119");
+System.out.println("Irfan Sudarani\n 1BM23CS119 ");
 }
 }
+
