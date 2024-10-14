@@ -1,0 +1,69 @@
+import java.util.*;
+ class Book {
+    String name;
+    String author;
+    double price;
+    int numPages;
+
+Book(String name, String author, double price, int numPages)
+ {
+        this.name = name;
+        this.author = author;
+        this.price = price;
+        this.numPages = numPages;
+
+  }
+public String toString() {
+
+String name, author, price, numPages;
+
+name = "Book name: " + this.name + "\n";
+
+author = "Author name: " + this.author + "\n";
+
+price = "Price: " + this.price + "\n";
+
+numPages = "Number of pages: " + this.numPages + "\n";
+
+return name + author + price + numPages;
+}
+
+
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the number of books: ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        Book b[]=new Book[n];
+        for (int i = 0; i < n; i++)
+       {
+            System.out.println("Enter details for book " + (i + 1) + ":");
+            System.out.print("Name: ");
+            String name = scanner.nextLine();
+            System.out.print("Author: ");
+            String author = scanner.nextLine();
+            System.out.print("Price: ");
+            double price = scanner.nextDouble();
+            System.out.print("Number of Pages: ");
+            int numPages = scanner.nextInt();
+            scanner.nextLine();
+           b[i] = new Book(name,author,price,numPages);
+            }
+       System.out.println("\nDetails of the Books:");
+        for (int i=0;i<n;i++)
+       {
+            System.out.println(b[i]);
+        }
+
+      System.out.print("NAME : IRFAN SUDARANI \nUSN : 1BM23CS119 \n ");
+
+    }
+}
+
+
+
+
+          
+
+
