@@ -1,0 +1,82 @@
+import java.util.*;
+
+
+
+abstract class Shape  {
+ Scanner sc = new Scanner (System.in);
+    int dimension1;
+    int dimension2;
+
+    
+    abstract void printArea();
+
+ 
+   }
+
+
+
+class Rectangle extends Shape {
+    Rectangle (){
+     System.out.println("Enter the  Dimensions of Rectangle (length And bredth): ");
+    dimension1 =sc.nextInt();
+
+dimension2 =sc.nextInt();
+}
+
+    void printArea() {
+
+        int area = dimension1 * dimension2;
+        System.out.println("Area of Rectangle: " + area);
+    }
+}
+
+
+class Triangle extends Shape {
+Triangle(){
+ System.out.println("Enter the  Dimensions of Triagle(Base and height): ");
+    dimension1 =sc.nextInt();
+
+dimension2 =sc.nextInt();
+}
+
+    
+    void printArea() {
+        double area = 0.5 * dimension1 * dimension2;
+        System.out.println("Area of Triangle: " + area);
+    }
+}
+
+
+
+class Circle extends Shape {
+Circle(){
+
+   System.out.println("Enter The Radius of Circle: ");
+dimension1 =sc.nextInt();
+}
+    void printArea() {
+        double area = Math.PI * dimension1 * dimension1;
+        System.out.println("Area of Circle: " + area);
+    }
+}
+
+
+public class lab_pgm_4_1BM23CS119 {
+    public static void main(String[] args) {
+        Shape rectangle = new Rectangle();
+        
+     
+
+        Shape triangle = new Triangle();
+        
+ 
+
+        Shape circle = new Circle();
+          rectangle.printArea();
+ triangle.printArea();
+        circle.printArea();
+    
+System.out.println("Name : IRFAN SUDARANI  \nUsn :1BM23CS119  ");
+}
+}
+
