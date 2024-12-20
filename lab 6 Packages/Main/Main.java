@@ -44,7 +44,7 @@ public class Main {
 
         sc.close();
 
-        System.out.println("USN: 1BM23CS147");
-        System.out.println("Name: Kedar Jevargi");
+        System.out.println("USN: 1BM23CS119");
+        System.out.println("Name: Irfan Sudarani");
     }
 }
